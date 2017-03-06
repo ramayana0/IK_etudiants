@@ -1,0 +1,214 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Math::Chain class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence de la classe Math::Chain</h1>Gestion d'une chaine articulaire.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;<a class="el" href="Chain_8h-source.html">Chain.h</a>&gt;</code>
+<p>
+<a href="classMath_1_1Chain-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Membres publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Chain.html#Math_1_1Chaina0">Chain</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructeur par defaut. </em> <a href="#Math_1_1Chaina0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Chain.html#Math_1_1Chaina1">add</a> (<a class="el" href="classMath_1_1Object.html">Object</a> *object)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajoute une transformation (<a class="el" href="classMath_1_1Vector3.html">Vector3</a> = translation / <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> = rotation). </em> <a href="#Math_1_1Chaina1"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Chain.html#Math_1_1Chaina2">compute</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Calcule la position de l'extrémité de la chaine articulaire. </em> <a href="#Math_1_1Chaina2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Chain.html#Math_1_1Chaina3">derivate</a> (float epsilon, <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> *quat)</td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Gestion d'une chaine articulaire. 
+<p>
+Cette classe permet d'accumuler les transformations associées à une chaine articulaire linéraire. Elle offre une fonctionnalité de dérivation en fonction de la variation de l'angle associé à un quaternion. 
+<p>
+<hr><h2>Documentation des contructeurs et destructeurs</h2>
+<a class="anchor" name="Math_1_1Chaina0" doxytag="Math::Chain::Chain" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Chain::Chain </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructeur par defaut. 
+<p>
+
+<p>
+<div class="fragment"><pre>00039     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des méthodes</h2>
+<a class="anchor" name="Math_1_1Chaina1" doxytag="Math::Chain::add" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Math::Chain::add </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Object.html">Object</a> *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>object</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Ajoute une transformation (<a class="el" href="classMath_1_1Vector3.html">Vector3</a> = translation / <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> = rotation). 
+<p>
+
+<p>
+<div class="fragment"><pre>00043     {
+00044       m_transforms.push_back(object) ;
+00045     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Chaina2" doxytag="Math::Chain::compute" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> Math::Chain::compute </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Calcule la position de l'extrémité de la chaine articulaire. 
+<p>
+
+<p>
+<div class="fragment"><pre>00049     {
+00050       Quaternion result(Vector3(0.0, 0.0, 0.0), 0.0) ;
+00051       <span class="keywordflow">for</span>(<span class="keywordtype">int</span> cpt=m_transforms.size()-1 ; cpt&gt;=0 ; cpt--)
+00052        {
+00053          <span class="keywordflow">if</span>(dynamic_cast&lt;Vector3*&gt;(m_transforms[cpt]))
+00054            {
+00055              result = result+(*(Vector3*)m_transforms[cpt]) ;
+00056            }
+00057          <span class="keywordflow">if</span>(dynamic_cast&lt;Quaternion*&gt;(m_transforms[cpt]))
+00058            {
+00059              result = (*(Quaternion*)m_transforms[cpt]).rotate(result) ;
+00060            }
+00061        }
+00062       <span class="keywordflow">return</span> result.v() ;
+00063     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Chaina3" doxytag="Math::Chain::derivate" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> Math::Chain::derivate </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname" nowrap> <em>epsilon</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> *&nbsp;</td>
+          <td class="mdname" nowrap> <em>quat</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Dérivation de l'extrémité de la chaine articulaire en fonction de l'angle d'un quaternion epsilon : précision utilisée pour la dérivation quat : pointeur sur le quaternion correspondant à l'angle par rapport auquel dériver. <dl compact><dt><b>Avertissement:</b></dt><dd>Si le pointeur sur le quaternion est invalide (i.e. non référencé), le programme s'arrête en affichant une erreur. </dd></dl>
+
+<p>
+<div class="fragment"><pre>00072     {
+00073       <span class="keywordtype">int</span> index = find(quat) ;
+00074       <span class="keywordflow">if</span>(index==-1)
+00075        {
+00076          std::cerr&lt;&lt;<span class="stringliteral">"Chain::derivate Quaternion does not exists"</span>&lt;&lt;std::endl ;
+00077          exit(-1) ;
+00078        }
+00079       <span class="keywordtype">float</span> angle = quat-&gt;getAngle() ;
+00080       quat-&gt;setAxisAngle(quat-&gt;getAxis(), angle-epsilon) ;
+00081       Vector3 minusEpsilon = <a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina2">compute</a>() ;
+00082       quat-&gt;setAxisAngle(quat-&gt;getAxis(), angle+epsilon) ;
+00083       Vector3 plusEpsilon = <a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina2">compute</a>() ;
+00084       quat-&gt;setAxisAngle(quat-&gt;getAxis(), angle) ;
+00085       <span class="keywordflow">return</span> (plusEpsilon-minusEpsilon)/(2.0*epsilon) ;
+00086     }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr>La documentation associée à cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="Chain_8h-source.html">Chain.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:57 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

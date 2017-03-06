@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="IK">
+</Property><Property Name="Fichier solution" Value="E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.sln">
+</Property><Property Name="Fichier d'options utilisateur" Value="E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.suo">
+</Property><Property Name="Date" Value="mercredi 9 janvier 2013">
+</Property><Property Name="Time" Value="14:06">
+</Property><Property Name="Numéro de journal" Value="2">
+</Property></Properties><Event ErrorLevel="2" Project="" Source="IK.sln" Description="Erreur lors de la création du fichier de sauvegarde : E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.sln.old">
+</Event><Event ErrorLevel="2" Project="" Source="IK.suo" Description="Erreur lors de la création du fichier de sauvegarde : E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.suo.old">
+</Event><Event ErrorLevel="0" Project="IK" Source="IK.vcproj" Description="Converting project file 'E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.vcproj'.">
+</Event><Event ErrorLevel="1" Project="IK" Source="IK.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="IK" Source="IK.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="IK" Source="IK.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="IK" Source="IK.vcproj" Description="Done converting to new project file 'E:\Richard\Documents\Enseignement\Cours\IUT\IK_etudiants\IK.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="IK" Source="IK.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="IK.sln" Description="Solution correctement convertie">
+</Event><Event ErrorLevel="3" Project="" Source="IK.sln" Description="Converted">
+</Event></UpgradeLog>

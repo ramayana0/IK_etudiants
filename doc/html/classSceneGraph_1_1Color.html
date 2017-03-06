@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: SceneGraph::Color class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence de la classe SceneGraph::Color</h1>Noeud du graphe de scène permettant de donner une couleur aux objets.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;<a class="el" href="Color_8h-source.html">Color.h</a>&gt;</code>
+<p>
+<p>Graphe d'héritage de la classe SceneGraph::Color
+<p><center><img src="classSceneGraph_1_1Color.png" usemap="#SceneGraph::Color_map" border="0" alt=""></center>
+<map name="SceneGraph::Color_map">
+<area href="classSceneGraph_1_1DrawObject.html" alt="SceneGraph::DrawObject" shape="rect" coords="0,0,156,24">
+</map>
+<a href="classSceneGraph_1_1Color-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Membres publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Color.html#SceneGraph_1_1Colora0">Color</a> (float red, float green, float blue)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>virtual void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Color.html#SceneGraph_1_1Colora1">draw</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gestion de l'affichage OpenGL. </em> <a href="#SceneGraph_1_1Colora1"></a><em><br><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Noeud du graphe de scène permettant de donner une couleur aux objets. 
+<p>
+<hr><h2>Documentation des contructeurs et destructeurs</h2>
+<a class="anchor" name="SceneGraph_1_1Colora0" doxytag="SceneGraph::Color::Color" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> SceneGraph::Color::Color </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname" nowrap> <em>red</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>green</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>blue</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructeur d'une couleur <dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>red</em>&nbsp;</td><td>: composante rouge dans [0,1] </td></tr>
+    <tr><td valign=top><em>green</em>&nbsp;</td><td>: composante verte dans [0,1] </td></tr>
+    <tr><td valign=top><em>blue</em>&nbsp;</td><td>: composante bleue dans [0,1] </td></tr>
+  </table>
+</dl>
+
+<p>
+<div class="fragment"><pre>00022     : m_red(red), m_green(green), m_blue(blue)
+00023   {}
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des méthodes</h2>
+<a class="anchor" name="SceneGraph_1_1Colora1" doxytag="SceneGraph::Color::draw" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> virtual void SceneGraph::Color::draw </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline, virtual]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Gestion de l'affichage OpenGL. 
+<p>
+
+<p>
+Implémente <a class="el" href="classSceneGraph_1_1DrawObject.html#SceneGraph_1_1DrawObjecta0">SceneGraph::DrawObject</a>.
+<p>
+<div class="fragment"><pre>00027   {
+00028     glColor3f(m_red, m_green, m_blue) ;
+00029   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr>La documentation associée à cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="Color_8h-source.html">Color.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:58 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

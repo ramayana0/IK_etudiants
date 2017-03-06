@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Quaternion.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Quaternion.h</h1><a href="Quaternion_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre>00001 <span class="preprocessor">#ifndef _Math_Quaternion_H</span>
+00002 <span class="preprocessor"></span><span class="preprocessor">#define _Math_Quaternion_H</span>
+00003 <span class="preprocessor"></span>
+00004 <span class="preprocessor">#include &lt;<a class="code" href="Vector3_8h.html">Math/Vector3.h</a>&gt;</span>
+00005 <span class="preprocessor">#include &lt;<a class="code" href="Object_8h.html">Math/Object.h</a>&gt;</span>
+00006 
+00007 <span class="keyword">namespace </span>Math
+00008 {
+<a name="l00010"></a><a class="code" href="classMath_1_1Quaternion.html">00010</a>   <span class="keyword">class </span><a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> : <span class="keyword">public</span> <a class="code" href="classMath_1_1Object.html">Object</a>
+00011   {
+00012   <span class="keyword">protected</span>:
+<a name="l00013"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">00013</a>     <span class="keywordtype">float</span>   <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ;
+<a name="l00014"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">00014</a>     <a class="code" href="classMath_1_1Vector3.html">Vector3</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ;
+00015 
+<a name="l00016"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">00016</a>     <span class="keywordtype">float</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> ;
+<a name="l00017"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">00017</a>     <a class="code" href="classMath_1_1Vector3.html">Vector3</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a> ;
+00018 
+00019   <span class="keyword">public</span>:
+<a name="l00021"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">00021</a>     <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>()
+00022     {}
+00023 
+<a name="l00025"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona1">00025</a>     <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Vector3.html">Vector3</a> <span class="keyword">const</span> &amp; v, <span class="keywordtype">float</span> <span class="keyword">const</span> &amp; angle)
+00026       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(cos(angle/2.0)), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(v*sin(angle/2.0)), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(angle), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(v)
+00027     {}
+00028        
+<a name="l00030"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona2">00030</a>     <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Vector3.html">Vector3</a> <span class="keyword">const</span> &amp; v)
+00031       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(0.0), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a>), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(0.0), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a>) 
+00032     {}
+00033 
+<a name="l00035"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona3">00035</a>     <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)
+00036       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>)
+00037     {}
+00038 
+<a name="l00040"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona4">00040</a>     <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp; s, <a class="code" href="classMath_1_1Vector3.html">Vector3</a> <span class="keyword">const</span> &amp; v)
+00041       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(s), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a>)
+00042     {}
+00043 
+<a name="l00045"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona5">00045</a>     <span class="keywordtype">float</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona5">getAngle</a>()<span class="keyword"> const</span>
+00046 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> ; }
+00047 
+<a name="l00049"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona6">00049</a>     <a class="code" href="classMath_1_1Vector3.html">Vector3</a> <span class="keyword">const</span> &amp; <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona6">getAxis</a>()<span class="keyword"> const</span>
+00050 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a> ; }
+00051 
+<a name="l00056"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona7">00056</a>     <span class="keywordtype">void</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona7">setAxisAngle</a>(<a class="code" href="classMath_1_1Vector3.html">Vector3</a> <span class="keyword">const</span> &amp; v, <span class="keywordtype">float</span> angle)
+00057     {
+00058       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = cos(angle/2.0) ;
+00059       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = v*sin(angle/2.0) ;
+00060       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> = angle ;
+00061       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>  = v ;
+00062     }
+00063 
+<a name="l00067"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona8">00067</a>     <span class="keywordtype">void</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona8">setAngle</a>(<span class="keywordtype">float</span> angle)
+00068     {
+00069       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = cos(angle/2.0) ;
+00070       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>*sin(angle/2.0) ;
+00071       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> = angle ;
+00072     }
+00073 
+<a name="l00074"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona9">00074</a>     <span class="keywordtype">float</span> &amp; <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona9">s</a>()
+00075     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ; }
+00076 
+<a name="l00077"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona10">00077</a>     <span class="keywordtype">float</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona9">s</a>()<span class="keyword"> const</span>
+00078 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ; }
+00079 
+<a name="l00080"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">00080</a>     <a class="code" href="classMath_1_1Vector3.html">Vector3</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a>()<span class="keyword"> const</span>
+00081 <span class="keyword">    </span>{ <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ; }
+00082 
+<a name="l00083"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona12">00083</a>     <a class="code" href="classMath_1_1Vector3.html">Vector3</a> &amp; <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a>()
+00084     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ; }
+00085 
+<a name="l00086"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona13">00086</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona13">operator+ </a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)<span class="keyword"> const</span>
+00087 <span class="keyword">    </span>{  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>, <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>+q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>) ; }
+00088 
+<a name="l00089"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona14">00089</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona18">operator- </a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)<span class="keyword"> const</span>
+00090 <span class="keyword">    </span>{  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>, <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>+q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>) ; }
+00091  
+<a name="l00092"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona15">00092</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona15">operator* </a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)<span class="keyword"> const</span>
+00093 <span class="keyword">    </span>{
+00094       <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>*q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>-<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>*q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>, q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>*<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+m_v*q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+(m_v^q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>)) ; 
+00095     }
+00096 
+<a name="l00097"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona16">00097</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona15">operator* </a>(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp; v)<span class="keyword"> const</span>
+00098 <span class="keyword">    </span>{  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>*v, <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>*v) ; }
+00099 
+<a name="l00100"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona17">00100</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona17">operator/ </a>(<span class="keywordtype">float</span> <span class="keyword">const</span> &amp; v)<span class="keyword"> const</span>
+00101 <span class="keyword">    </span>{  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>/v, <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>/v) ; }
+00102 
+<a name="l00103"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona18">00103</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona18">operator- </a>()<span class="keyword"> const</span>
+00104 <span class="keyword">    </span>{   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(-<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>, -<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>) ; }
+00105 
+<a name="l00107"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona19">00107</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona19">inv</a>()<span class="keyword"> const</span>
+00108 <span class="keyword">    </span>{   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>, -<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>) ; }
+00109 
+<a name="l00111"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona20">00111</a>     <span class="keywordtype">float</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona20">norm2</a>()<span class="keyword"> const</span>
+00112 <span class="keyword">    </span>{   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>*<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>.<a class="code" href="classMath_1_1Vector3.html#Math_1_1Vector3a12">norm2</a>() ; }
+00113 
+<a name="l00115"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona21">00115</a>     <span class="keywordtype">float</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona21">norm</a>()<span class="keyword"> const</span>
+00116 <span class="keyword">    </span>{  <span class="keywordflow">return</span> sqrt(this-&gt;norm2()) ; }
+00117 
+<a name="l00118"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona22">00118</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> &amp; <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona22">operator= </a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)
+00119     {
+00120       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ;
+00121       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = q.<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ;
+00122       <span class="keywordflow">return</span> (*this) ;
+00123     }
+00124 
+<a name="l00126"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona23">00126</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> &amp; <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona23">normalize</a>() 
+00127     {
+00128       (*this) = (*this)/this-&gt;<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona21">norm</a>() ;
+00129       <span class="keywordflow">return</span> *<span class="keyword">this</span> ;
+00130     }
+00131 
+<a name="l00133"></a><a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona24">00133</a>     <a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona24">rotate</a>(<a class="code" href="classMath_1_1Quaternion.html">Quaternion</a> <span class="keyword">const</span> &amp; q)
+00134     {
+00135       <span class="keywordflow">return</span> (*this)*q*this-&gt;<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona19">inv</a>() ;
+00136     }
+00137   };
+00138 } 
+00139 
+00140 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:55 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

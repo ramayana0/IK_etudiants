@@ -1,0 +1,1074 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Math::Quaternion class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence de la classe Math::Quaternion</h1><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> handling.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;<a class="el" href="Quaternion_8h-source.html">Quaternion.h</a>&gt;</code>
+<p>
+<p>Graphe d'héritage de la classe Math::Quaternion
+<p><center><img src="classMath_1_1Quaternion.png" usemap="#Math::Quaternion_map" border="0" alt=""></center>
+<map name="Math::Quaternion_map">
+<area href="classMath_1_1Object.html" alt="Math::Object" shape="rect" coords="0,0,109,24">
+</map>
+<a href="classMath_1_1Quaternion-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Membres publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Default constructor (DO NOT initialize explicitly the members). </em> <a href="#Math_1_1Quaterniona0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona1">Quaternion</a> (<a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;v, float const &amp;angle)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor with vector/angle arguments. </em> <a href="#Math_1_1Quaterniona1"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona2">Quaternion</a> (<a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor with a point. </em> <a href="#Math_1_1Quaterniona2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona3">Quaternion</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy constructor. </em> <a href="#Math_1_1Quaterniona3"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona4">Quaternion</a> (float const &amp;s, <a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Constructor with quaternion data arguments. </em> <a href="#Math_1_1Quaterniona4"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona5">getAngle</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the rotation angle. </em> <a href="#Math_1_1Quaterniona5"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona6">getAxis</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the axis of rotation. </em> <a href="#Math_1_1Quaterniona6"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona7">setAxisAngle</a> (<a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;v, float angle)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifies the quaternion. </em> <a href="#Math_1_1Quaterniona7"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona8">setAngle</a> (float angle)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Modifies the quaternion. </em> <a href="#Math_1_1Quaterniona8"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>float &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona9">s</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona10">s</a> () const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona11">v</a> () const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona12">v</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona13">operator+</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona14">operator-</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona15">operator *</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona16">operator *</a> (float const &amp;v) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona17">operator/</a> (float const &amp;v) const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona18">operator-</a> () const </td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona19">inv</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Inverse of the quaternion. </em> <a href="#Math_1_1Quaterniona19"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona20">norm2</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Square of the quaternion norm. </em> <a href="#Math_1_1Quaterniona20"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona21">norm</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Norm of the quaternion. </em> <a href="#Math_1_1Quaterniona21"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona22">operator=</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona23">normalize</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Normalize the current quaternion. </em> <a href="#Math_1_1Quaterniona23"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona24">rotate</a> (<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;q)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Computes rotation of the quaternion vector. </em> <a href="#Math_1_1Quaterniona24"></a><em><br><br></td></tr>
+<tr><td colspan=2><br><h2>Attributs Protégés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>float&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+<a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> handling. 
+<p>
+<hr><h2>Documentation des contructeurs et destructeurs</h2>
+<a class="anchor" name="Math_1_1Quaterniona0" doxytag="Math::Quaternion::Quaternion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Quaternion::Quaternion </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Default constructor (DO NOT initialize explicitly the members). 
+<p>
+
+<p>
+<div class="fragment"><pre>00022     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona1" doxytag="Math::Quaternion::Quaternion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Quaternion::Quaternion </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>angle</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructor with vector/angle arguments. 
+<p>
+
+<p>
+<div class="fragment"><pre>00026       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(cos(angle/2.0)), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(v*sin(angle/2.0)), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(angle), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(v)
+00027     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona2" doxytag="Math::Quaternion::Quaternion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Quaternion::Quaternion </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>v</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructor with a point. 
+<p>
+
+<p>
+<div class="fragment"><pre>00031       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(0.0), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(v), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(0.0), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(v) 
+00032     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona3" doxytag="Math::Quaternion::Quaternion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Quaternion::Quaternion </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Copy constructor. 
+<p>
+
+<p>
+<div class="fragment"><pre>00036       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(q.m_s), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(q.m_v), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a>(q.m_angle), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>(q.m_axis)
+00037     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona4" doxytag="Math::Quaternion::Quaternion" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Math::Quaternion::Quaternion </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>s</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap><a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>v</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Constructor with quaternion data arguments. 
+<p>
+
+<p>
+<div class="fragment"><pre>00041       : <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>(s), <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>(v)
+00042     {}
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des méthodes</h2>
+<a class="anchor" name="Math_1_1Quaterniona5" doxytag="Math::Quaternion::getAngle" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float Math::Quaternion::getAngle </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Returns the rotation angle. 
+<p>
+
+<p>
+<div class="fragment"><pre>00046     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona6" doxytag="Math::Quaternion::getAxis" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> const&amp; Math::Quaternion::getAxis </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Returns the axis of rotation. 
+<p>
+
+<p>
+<div class="fragment"><pre>00050     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona19" doxytag="Math::Quaternion::inv" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::inv </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Inverse of the quaternion. 
+<p>
+
+<p>
+<div class="fragment"><pre>00108     {   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s, -m_v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona21" doxytag="Math::Quaternion::norm" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float Math::Quaternion::norm </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Norm of the quaternion. 
+<p>
+
+<p>
+<div class="fragment"><pre>00116     {  <span class="keywordflow">return</span> sqrt(this-&gt;norm2()) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona20" doxytag="Math::Quaternion::norm2" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float Math::Quaternion::norm2 </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Square of the quaternion norm. 
+<p>
+
+<p>
+<div class="fragment"><pre>00112     {   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>*<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a>+<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a>.norm2() ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona23" doxytag="Math::Quaternion::normalize" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&amp; Math::Quaternion::normalize </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Normalize the current quaternion. 
+<p>
+
+<p>
+<div class="fragment"><pre>00127     {
+00128       (*this) = (*this)/this-&gt;<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona21">norm</a>() ;
+00129       <span class="keywordflow">return</span> *<span class="keyword">this</span> ;
+00130     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona16" doxytag="Math::Quaternion::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator * </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>v</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00098     {  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s*v, m_v*v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona15" doxytag="Math::Quaternion::operator *" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator * </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00093     {
+00094       <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s*q.m_s-m_v*q.m_v, q.m_v*m_s+m_v*q.m_s+(m_v^q.m_v)) ; 
+00095     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona13" doxytag="Math::Quaternion::operator+" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator+ </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00087     {  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s+q.m_s, m_v+q.m_v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona18" doxytag="Math::Quaternion::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator- </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00104     {   <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(-m_s, -m_v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona14" doxytag="Math::Quaternion::operator-" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator- </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00090     {  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s+q.m_s, m_v+q.m_v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona17" doxytag="Math::Quaternion::operator/" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::operator/ </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>v</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00101     {  <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona0">Quaternion</a>(m_s/v, m_v/v) ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona22" doxytag="Math::Quaternion::operator=" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a>&amp; Math::Quaternion::operator= </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00119     {
+00120       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = q.m_s ;
+00121       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = q.m_v ;
+00122       <span class="keywordflow">return</span> (*this) ;
+00123     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona24" doxytag="Math::Quaternion::rotate" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> Math::Quaternion::rotate </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> const &amp;&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>q</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Computes rotation of the quaternion vector. 
+<p>
+
+<p>
+<div class="fragment"><pre>00134     {
+00135       <span class="keywordflow">return</span> (*this)*q*this-&gt;<a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaterniona19">inv</a>() ;
+00136     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona10" doxytag="Math::Quaternion::s" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float Math::Quaternion::s </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00078     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona9" doxytag="Math::Quaternion::s" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float&amp; Math::Quaternion::s </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00075     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona8" doxytag="Math::Quaternion::setAngle" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Math::Quaternion::setAngle </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>angle</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Modifies the quaternion. 
+<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>angle</em>&nbsp;</td><td>: rotation angle </td></tr>
+  </table>
+</dl>
+
+<p>
+<div class="fragment"><pre>00068     {
+00069       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = cos(angle/2.0) ;
+00070       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>*sin(angle/2.0) ;
+00071       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> = angle ;
+00072     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona7" doxytag="Math::Quaternion::setAxisAngle" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Math::Quaternion::setAxisAngle </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>v</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>angle</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Modifies the quaternion. 
+<p>
+<dl compact><dt><b>Paramètres:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign=top><em>v</em>&nbsp;</td><td>: rotation axis </td></tr>
+    <tr><td valign=top><em>angle</em>&nbsp;</td><td>: rotation angle </td></tr>
+  </table>
+</dl>
+
+<p>
+<div class="fragment"><pre>00057     {
+00058       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">m_s</a> = cos(angle/2.0) ;
+00059       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> = v*sin(angle/2.0) ;
+00060       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">m_angle</a> = angle ;
+00061       <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">m_axis</a>  = v ;
+00062     }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona12" doxytag="Math::Quaternion::v" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a>&amp; Math::Quaternion::v </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00084     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaterniona11" doxytag="Math::Quaternion::v" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> Math::Quaternion::v </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap> const<code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00081     { <span class="keywordflow">return</span> <a class="code" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">m_v</a> ; }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des données imbriquées</h2>
+<a class="anchor" name="Math_1_1Quaternionp2" doxytag="Math::Quaternion::m_angle" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float <a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp2">Math::Quaternion::m_angle</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaternionp3" doxytag="Math::Quaternion::m_axis" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> <a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp3">Math::Quaternion::m_axis</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaternionp0" doxytag="Math::Quaternion::m_s" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> float <a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp0">Math::Quaternion::m_s</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Math_1_1Quaternionp1" doxytag="Math::Quaternion::m_v" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Vector3</a> <a class="el" href="classMath_1_1Quaternion.html#Math_1_1Quaternionp1">Math::Quaternion::m_v</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr>La documentation associée à cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="Quaternion_8h-source.html">Quaternion.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:58 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

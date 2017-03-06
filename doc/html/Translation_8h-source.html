@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Translation.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Translation.h</h1><a href="Translation_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre>00001 <span class="preprocessor">#ifndef _Translation_H</span>
+00002 <span class="preprocessor"></span><span class="preprocessor">#define _Translation_H</span>
+00003 <span class="preprocessor"></span>
+00004 <span class="keyword">namespace </span>SceneGraph
+00005 {
+00006 
+<a name="l00012"></a><a class="code" href="classSceneGraph_1_1Translation.html">00012</a> <span class="keyword">class </span><a class="code" href="classSceneGraph_1_1Translation.html">Translation</a> : <span class="keyword">public</span> <a class="code" href="classSceneGraph_1_1Group.html">Group</a>
+00013 {
+00014 <span class="keyword">private</span>:
+00015   <span class="keywordtype">float</span> m_x, m_y, m_z ;
+00016 <span class="keyword">public</span>:
+<a name="l00018"></a><a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa0">00018</a>   <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa0">Translation</a>()
+00019   {
+00020     m_x=0.0 ; m_y=0.0 ; m_z=0.0 ;
+00021   }
+00022 
+<a name="l00024"></a><a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa1">00024</a>   <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa0">Translation</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z)
+00025   {
+00026     <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">setVector</a>(x,y,z);
+00027   }
+00028 
+<a name="l00030"></a><a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">00030</a>   <span class="keywordtype">void</span> <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">setVector</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y, <span class="keywordtype">float</span> z)
+00031   {
+00032     m_x = x ; m_y = y ; m_z = z ;
+00033   }
+00034 
+<a name="l00036"></a><a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa3">00036</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa3">draw</a>()
+00037   {
+00038     glPushMatrix() ;
+00039     glTranslatef(m_x, m_y, m_z) ;
+00040     Group::draw() ;
+00041     glPopMatrix() ;
+00042   }
+00043 } ;
+00044 
+00045 }
+00046 
+00047 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:55 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

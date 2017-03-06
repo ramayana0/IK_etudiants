@@ -1,0 +1,22 @@
+﻿  main.cc
+C:\Users\clems\OneDrive\Documents\IK_etudiants\Animation.h(50): warning C4101: 't1': unreferenced local variable
+C:\Users\clems\OneDrive\Documents\IK_etudiants\Animation.h(48): warning C4101: 'r1': unreferenced local variable
+main.cc(35): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+main.cc(37): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+glut32.lib(glut32.dll) : error LNK2026: module unsafe for SAFESEH image.
+Release\IK.exe : fatal error LNK1281: Unable to generate SAFESEH image.

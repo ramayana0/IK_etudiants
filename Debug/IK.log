@@ -1,0 +1,5 @@
+﻿  main.cc
+c:\users\clems\onedrive\documents\ik_etudiants\main.cc(35): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+c:\users\clems\onedrive\documents\ik_etudiants\main.cc(37): warning C4838: conversion from 'double' to 'GLfloat' requires a narrowing conversion
+  IK.vcxproj -> C:\Users\clems\OneDrive\Documents\IK_etudiants\Debug\IK.exe
+  IK.vcxproj -> Debug\IK.pdb (Full PDB)

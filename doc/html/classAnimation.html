@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Animation class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence de la classe Animation</h1>Classe de gestion de l'affichage et de l'animation de la chaine polyarticulée.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;<a class="el" href="Animation_8h-source.html">Animation.h</a>&gt;</code>
+<p>
+<a href="classAnimation-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Membres publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationa0">Animation</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">constructeur </em> <a href="#Animationa0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationa1">createChain</a> (const  unsigned int nbLimbs)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationa2">computeAnimation</a> (const  bool newTarget, const  <a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a> &amp;target)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode appelée pour le calcul de l'animation. </em> <a href="#Animationa2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationa3">drawScene</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Méthode appelée pour le rendu de la scène. </em> <a href="#Animationa3"></a><em><br><br></td></tr>
+<tr><td colspan=2><br><h2>Attributs Protégés</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classSceneGraph_1_1Rotation.html">SceneGraph::Rotation</a> * &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp0">rotVector</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Noeud Group représentant la racine du graphe de scène. </em> <a href="#Animationp0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classSceneGraph_1_1Translation.html">SceneGraph::Translation</a> * &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp1">trVector</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSceneGraph_1_1Group.html">SceneGraph::Group</a> *&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp2">m_root</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classMath_1_1Quaternion.html">Math::Quaternion</a> * &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp3">quatVector</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>vector&lt; <a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a> * &gt;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp4">vecVector</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Chain.html">Math::Chain</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp5">chain</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classSceneGraph_1_1Translation.html">SceneGraph::Translation</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp6">tr</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp7">endPos</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top><a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp8">startPos</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align=right valign=top>unsigned int&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classAnimation.html#Animationp9">cpt</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Classe de gestion de l'affichage et de l'animation de la chaine polyarticulée. 
+<p>
+<hr><h2>Documentation des contructeurs et destructeurs</h2>
+<a class="anchor" name="Animationa0" doxytag="Animation::Animation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> Animation::Animation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+constructeur 
+<p>
+
+<p>
+<div class="fragment"><pre>00034   {
+00035     <a class="code" href="classAnimation.html#Animationa1">createChain</a>(6);
+00036     <a class="code" href="classAnimation.html#Animationp2">m_root</a> = <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[0];
+00037     <a class="code" href="classAnimation.html#Animationp6">tr</a>.<a class="code" href="classSceneGraph_1_1Group.html#SceneGraph_1_1Translationa4">addChild</a>(<span class="keyword">new</span> <a class="code" href="classSceneGraph_1_1Sphere.html">SceneGraph::Sphere</a>(0.1f));
+00038   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des méthodes</h2>
+<a class="anchor" name="Animationa2" doxytag="Animation::computeAnimation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Animation::computeAnimation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const bool&nbsp;</td>
+          <td class="mdname" nowrap> <em>newTarget</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>const <a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a> &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>target</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Méthode appelée pour le calcul de l'animation. 
+<p>
+Dans cette méthode, vous devrez implémenter tous vos calculs d'animation. 
+<p>
+<div class="fragment"><pre>00073   {
+00074               <span class="keywordflow">if</span> (newTarget)
+00075               {
+00076                      <a class="code" href="classAnimation.html#Animationp7">endPos</a> = target;
+00077                      <a class="code" href="classAnimation.html#Animationp8">startPos</a> = <a class="code" href="classAnimation.html#Animationp5">chain</a>.<a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina2">compute</a>();
+00078                      <a class="code" href="classAnimation.html#Animationp9">cpt</a> = 0;
+00079               }
+00080               <a class="code" href="classAnimation.html#Animationp9">cpt</a>+=2;
+00081               <a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a> currentTarget;
+00082               <span class="keywordflow">if</span> (<a class="code" href="classAnimation.html#Animationp9">cpt</a> &gt; 100)
+00083               {
+00084                      currentTarget = <a class="code" href="classAnimation.html#Animationp7">endPos</a>;
+00085               }
+00086               <span class="keywordflow">else</span>
+00087               {
+00088                      currentTarget = (<a class="code" href="classAnimation.html#Animationp7">endPos</a>-<a class="code" href="classAnimation.html#Animationp8">startPos</a>)*((<span class="keywordtype">float</span>)<a class="code" href="classAnimation.html#Animationp9">cpt</a>/100.f)+<a class="code" href="classAnimation.html#Animationp8">startPos</a>;
+00089                      <a class="code" href="classAnimation.html#Animationp6">tr</a>.<a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">setVector</a>(currentTarget[0], currentTarget[1], currentTarget[2]);
+00090               }
+00091 
+00092               <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=<a class="code" href="classAnimation.html#Animationp1">trVector</a>.size()-1; i&gt;=0; i--)
+00093               {
+00094                      <a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a> pos = <a class="code" href="classAnimation.html#Animationp5">chain</a>.<a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina2">compute</a>();
+00095                      <a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a> err(currentTarget-pos);
+00096                      <span class="keywordflow">if</span> (err.<a class="code" href="classMath_1_1Vector3.html#Math_1_1Vector3a13">norm</a>() &gt; 0.05f)
+00097                      {
+00098                             <a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a> v = <a class="code" href="classAnimation.html#Animationp5">chain</a>.<a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina3">derivate</a>(.1f, quatVector[i]);
+00099                             <span class="keywordtype">float</span> res = v.<a class="code" href="classMath_1_1Vector3.html#Math_1_1Vector3a16">inv</a>()*(currentTarget-pos);
+00100                             <span class="keywordflow">if</span> (res &gt; 0.1f) res=0.1f;
+00101                             <span class="keywordflow">if</span> (<a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i]-&gt;getAngle()+res &gt; 0.7f)
+00102                             {
+00103                                    <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;setAngle(0.7f);
+00104                                    <a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i]-&gt;setAngle(0.7f);
+00105                             }
+00106                             <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i]-&gt;getAngle()+res &lt; -0.7f)
+00107                             {
+00108                                    <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;setAngle(-0.7f);
+00109                                    <a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i]-&gt;setAngle(-0.7f);
+00110                             }
+00111                             <span class="keywordflow">else</span>
+00112                             {
+00113                                    <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;setAngle(rotVector[i]-&gt;getAngle()+res);
+00114                                    <a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i]-&gt;setAngle(quatVector[i]-&gt;getAngle()+res);
+00115                             }
+00116                      }
+00117               }
+00118   }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationa1" doxytag="Animation::createChain" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Animation::createChain </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">const unsigned int&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>nbLimbs</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+<div class="fragment"><pre>00041   {
+00042     <span class="comment">// On crée les objets</span>
+00043     <a class="code" href="classAnimation.html#Animationp0">rotVector</a>.resize(nbLimbs);
+00044     <a class="code" href="classAnimation.html#Animationp1">trVector</a>.resize(nbLimbs);
+00045     <a class="code" href="classAnimation.html#Animationp3">quatVector</a>.resize(nbLimbs);
+00046     <a class="code" href="classAnimation.html#Animationp4">vecVector</a>.resize(nbLimbs);
+00047     <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;nbLimbs; i++)
+00048     {
+00049       <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i] = <span class="keyword">new</span> <a class="code" href="classSceneGraph_1_1Rotation.html">SceneGraph::Rotation</a>(0,0,1,0);
+00050       <a class="code" href="classAnimation.html#Animationp3">quatVector</a>[i] = <span class="keyword">new</span> <a class="code" href="classMath_1_1Quaternion.html">Math::Quaternion</a>(<a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a>(0,0,1),0);
+00051       <a class="code" href="classAnimation.html#Animationp5">chain</a>.<a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina1">add</a>(quatVector[i]);
+00052       <span class="keywordflow">if</span> (i != 0)
+00053        {
+00054          <a class="code" href="classAnimation.html#Animationp1">trVector</a>[i-1]-&gt;addChild(rotVector[i]);
+00055        }
+00056       <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;addChild(<span class="keyword">new</span> <a class="code" href="classSceneGraph_1_1Sphere.html">SceneGraph::Sphere</a>(0.08));
+00057       <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;addChild(<span class="keyword">new</span> <a class="code" href="classSceneGraph_1_1Cylinder.html">SceneGraph::Cylinder</a>(0.05, 0.05, 1));
+00058       
+00059       <a class="code" href="classAnimation.html#Animationp1">trVector</a>[i] = <span class="keyword">new</span> <a class="code" href="classSceneGraph_1_1Translation.html">SceneGraph::Translation</a>(0,1,0);
+00060       <a class="code" href="classAnimation.html#Animationp4">vecVector</a>[i] = <span class="keyword">new</span> <a class="code" href="classMath_1_1Vector3.html">Math::Vector3</a>(0,1,0);
+00061       <a class="code" href="classAnimation.html#Animationp5">chain</a>.<a class="code" href="classMath_1_1Chain.html#Math_1_1Chaina1">add</a>(vecVector[i]);
+00062       <a class="code" href="classAnimation.html#Animationp0">rotVector</a>[i]-&gt;addChild(trVector[i]);
+00063     }
+00064 
+00065 
+00066 }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationa3" doxytag="Animation::drawScene" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void Animation::drawScene </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Méthode appelée pour le rendu de la scène. 
+<p>
+<dl compact><dt><b>Avertissement:</b></dt><dd>: normalement vous ne devriez pas avoir à modifier cette méthode. </dd></dl>
+
+<p>
+<div class="fragment"><pre>00124   {
+00125     <span class="comment">//tr.draw();</span>
+00126     <a class="code" href="classAnimation.html#Animationp2">m_root</a>-&gt;<a class="code" href="classSceneGraph_1_1Group.html#SceneGraph_1_1Groupa3">draw</a>();
+00127   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des données imbriquées</h2>
+<a class="anchor" name="Animationp5" doxytag="Animation::chain" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Chain.html">Math::Chain</a> <a class="el" href="classAnimation.html#Animationp5">Animation::chain</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp9" doxytag="Animation::cpt" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> unsigned int <a class="el" href="classAnimation.html#Animationp9">Animation::cpt</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp7" doxytag="Animation::endPos" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a> <a class="el" href="classAnimation.html#Animationp7">Animation::endPos</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp2" doxytag="Animation::m_root" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSceneGraph_1_1Group.html">SceneGraph::Group</a>* <a class="el" href="classAnimation.html#Animationp2">Animation::m_root</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp3" doxytag="Animation::quatVector" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt;<a class="el" href="classMath_1_1Quaternion.html">Math::Quaternion</a>*&gt; <a class="el" href="classAnimation.html#Animationp3">Animation::quatVector</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp0" doxytag="Animation::rotVector" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt;<a class="el" href="classSceneGraph_1_1Rotation.html">SceneGraph::Rotation</a>*&gt; <a class="el" href="classAnimation.html#Animationp0">Animation::rotVector</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Noeud Group représentant la racine du graphe de scène. 
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp8" doxytag="Animation::startPos" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a> <a class="el" href="classAnimation.html#Animationp8">Animation::startPos</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp6" doxytag="Animation::tr" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> <a class="el" href="classSceneGraph_1_1Translation.html">SceneGraph::Translation</a> <a class="el" href="classAnimation.html#Animationp6">Animation::tr</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp1" doxytag="Animation::trVector" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt;<a class="el" href="classSceneGraph_1_1Translation.html">SceneGraph::Translation</a>*&gt; <a class="el" href="classAnimation.html#Animationp1">Animation::trVector</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<a class="anchor" name="Animationp4" doxytag="Animation::vecVector" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> vector&lt;<a class="el" href="classMath_1_1Vector3.html">Math::Vector3</a>*&gt; <a class="el" href="classAnimation.html#Animationp4">Animation::vecVector</a><code> [protected]</code>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+    </td>
+  </tr>
+</table>
+<hr>La documentation associée à cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="Animation_8h-source.html">Animation.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:57 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

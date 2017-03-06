@@ -1,0 +1,265 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: SceneGraph::Translation class Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence de la classe SceneGraph::Translation</h1>Noeud translation.  
+<a href="#_details">Plus de détails...</a>
+<p>
+<code>#include &lt;<a class="el" href="Translation_8h-source.html">Translation.h</a>&gt;</code>
+<p>
+<p>Graphe d'héritage de la classe SceneGraph::Translation
+<p><center><img src="classSceneGraph_1_1Translation.png" usemap="#SceneGraph::Translation_map" border="0" alt=""></center>
+<map name="SceneGraph::Translation_map">
+<area href="classSceneGraph_1_1Group.html" alt="SceneGraph::Group" shape="rect" coords="0,56,156,80">
+<area href="classSceneGraph_1_1DrawObject.html" alt="SceneGraph::DrawObject" shape="rect" coords="0,0,156,24">
+</map>
+<a href="classSceneGraph_1_1Translation-members.html">Liste de tous les membres</a><table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Membres publics</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa0">Translation</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Contructeur d'une translation : translation nulle par defaut. </em> <a href="#SceneGraph_1_1Translationa0"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa1">Translation</a> (float x, float y, float z)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Contructeur d'une translation : translation nulle par defaut. </em> <a href="#SceneGraph_1_1Translationa1"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">setVector</a> (float x, float y, float z)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Changement du vecteur de translation. </em> <a href="#SceneGraph_1_1Translationa2"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>virtual void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa3">draw</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gestion de l'affichage OpenGL. </em> <a href="#SceneGraph_1_1Translationa3"></a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>void&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa4">addChild</a> (<a class="el" href="classSceneGraph_1_1DrawObject.html">DrawObject</a> *object)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Ajout d'un fils au groupe d'objets. </em> <a href="#SceneGraph_1_1Translationa4"></a><em><br><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>Description détaillée</h2>
+Noeud translation. 
+<p>
+Le noeud translation est une spécialisation d'un <a class="el" href="classSceneGraph_1_1Group.html">Group</a> permettant de décrire des translations répercutées sur les fils de ce noeud. 
+<p>
+<hr><h2>Documentation des contructeurs et destructeurs</h2>
+<a class="anchor" name="SceneGraph_1_1Translationa0" doxytag="SceneGraph::Translation::Translation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> SceneGraph::Translation::Translation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Contructeur d'une translation : translation nulle par defaut. 
+<p>
+
+<p>
+<div class="fragment"><pre>00019   {
+00020     m_x=0.0 ; m_y=0.0 ; m_z=0.0 ;
+00021   }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="SceneGraph_1_1Translationa1" doxytag="SceneGraph::Translation::Translation" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> SceneGraph::Translation::Translation </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>z</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Contructeur d'une translation : translation nulle par defaut. 
+<p>
+
+<p>
+<div class="fragment"><pre>00025   {
+00026     <a class="code" href="classSceneGraph_1_1Translation.html#SceneGraph_1_1Translationa2">setVector</a>(x,y,z);
+00027   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr><h2>Documentation des méthodes</h2>
+<a class="anchor" name="SceneGraph_1_1Translationa4" doxytag="SceneGraph::Translation::addChild" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void SceneGraph::Group::addChild </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top"><a class="el" href="classSceneGraph_1_1DrawObject.html">DrawObject</a> *&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>object</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline, inherited]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Ajout d'un fils au groupe d'objets. 
+<p>
+
+<p>
+<div class="fragment"><pre>00030   {
+00031     m_objects.push_back(object) ;
+00032   }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="SceneGraph_1_1Translationa3" doxytag="SceneGraph::Translation::draw" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> virtual void SceneGraph::Translation::draw </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline, virtual]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Gestion de l'affichage OpenGL. 
+<p>
+
+<p>
+Redéfinie à partir de <a class="el" href="classSceneGraph_1_1Group.html#SceneGraph_1_1Groupa3">SceneGraph::Group</a>.
+<p>
+<div class="fragment"><pre>00037   {
+00038     glPushMatrix() ;
+00039     glTranslatef(m_x, m_y, m_z) ;
+00040     Group::draw() ;
+00041     glPopMatrix() ;
+00042   }
+</pre></div>    </td>
+  </tr>
+</table>
+<a class="anchor" name="SceneGraph_1_1Translationa2" doxytag="SceneGraph::Translation::setVector" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> void SceneGraph::Translation::setVector </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">float&nbsp;</td>
+          <td class="mdname" nowrap> <em>x</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>y</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>float&nbsp;</td>
+          <td class="mdname" nowrap> <em>z</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Changement du vecteur de translation. 
+<p>
+
+<p>
+<div class="fragment"><pre>00031   {
+00032     m_x = x ; m_y = y ; m_z = z ;
+00033   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr>La documentation associée à cette classe a été générée à partir du fichier suivant :<ul>
+<li><a class="el" href="Translation_8h-source.html">Translation.h</a></ul>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:32:00 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

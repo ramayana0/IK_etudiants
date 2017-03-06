@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Math Namespace Reference</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Référence du namespace Math</h1>
+<p>
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td></td></tr>
+<tr><td colspan=2><br><h2>Composants</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>class &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Chain.html">Chain</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Gestion d'une chaine articulaire. </em> <a href="classMath_1_1Chain.html#_details">Plus de détails...</a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>class &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Object.html">Object</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Classe de base de tous les objets mathématiques. </em> <a href="classMath_1_1Object.html#_details">Plus de détails...</a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>class &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight"><a class="el" href="classMath_1_1Quaternion.html">Quaternion</a> handling. </em> <a href="classMath_1_1Quaternion.html#_details">Plus de détails...</a><em><br><br></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>class &nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="classMath_1_1Vector3.html">Vector3</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Classe de gestion de Vecteurs en 3D. </em> <a href="classMath_1_1Vector3.html#_details">Plus de détails...</a><em><br><br></td></tr>
+<tr><td colspan=2><br><h2>Fonctions</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align=right valign=top>std::ostream &amp;&nbsp;</td><td class="memItemRight" valign=bottom><a class="el" href="namespaceMath.html#a0">operator&lt;&lt;</a> (std::ostream &amp;out, <a class="el" href="classMath_1_1Vector3.html">Vector3</a> const &amp;v)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Output operator. </em> <a href="#a0"></a><em><br><br></td></tr>
+</table>
+<hr><h2>Documentation de la fonction</h2>
+<a class="anchor" name="a0" doxytag="Math::operator<<" ></a><p>
+<table class="mdTable" width="100%" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top"> std::ostream&amp; operator&lt;&lt; </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">std::ostream &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>out</em>, </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="md" nowrap>Vector3 const &amp;&nbsp;</td>
+          <td class="mdname" nowrap> <em>v</em></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing=5 cellpadding=0 border=0>
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+Output operator. 
+<p>
+
+<p>
+<div class="fragment"><pre>00147   {
+00148     <span class="keywordflow">for</span>(<span class="keywordtype">int</span> cpt=0 ; cpt&lt;3 ; cpt++)
+00149       {
+00150        out&lt;&lt;v[cpt] ;
+00151        <span class="keywordflow">if</span>(cpt!=2)
+00152          {
+00153            out&lt;&lt;<span class="stringliteral">", "</span> ;
+00154          }
+00155       }
+00156     <span class="keywordflow">return</span> out ;
+00157   }
+</pre></div>    </td>
+  </tr>
+</table>
+<hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:57 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>

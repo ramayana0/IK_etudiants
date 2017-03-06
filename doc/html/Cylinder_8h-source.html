@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>TP de cin&#xe9;matique inverse: Cylinder.h Source File</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Généré par Doxygen 1.3.4 -->
+<div class="qindex"><a class="qindex" href="index.html">Page&nbsp;principale</a> | <a class="qindex" href="namespaces.html">Liste des namespaces</a> | <a class="qindex" href="hierarchy.html">Hiérarchie&nbsp;des&nbsp;classes</a> | <a class="qindex" href="annotated.html">Liste&nbsp;des&nbsp;composants</a> | <a class="qindex" href="files.html">Liste&nbsp;des&nbsp;fichiers</a> | <a class="qindex" href="namespacemembers.html">Membres&nbsp;des&nbsp;namespaces</a> | <a class="qindex" href="functions.html">Composants</a></div>
+<h1>Cylinder.h</h1><a href="Cylinder_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><pre>00001 <span class="preprocessor">#ifndef _Cylinder_H</span>
+00002 <span class="preprocessor"></span><span class="preprocessor">#define _Cylinder_H</span>
+00003 <span class="preprocessor"></span>
+00004 <span class="preprocessor">#include &lt;GL/glu.h&gt;</span>
+00005 <span class="preprocessor">#include "<a class="code" href="DrawObject_8h.html">DrawObject.h</a>"</span>
+00006 
+00007 <span class="keyword">namespace </span>SceneGraph
+00008 {
+<a name="l00014"></a><a class="code" href="classSceneGraph_1_1Cylinder.html">00014</a> <span class="keyword">class </span><a class="code" href="classSceneGraph_1_1Cylinder.html">Cylinder</a> : <span class="keyword">public</span> <a class="code" href="classSceneGraph_1_1DrawObject.html">DrawObject</a>
+00015 {
+00016 <span class="keyword">private</span>:
+00017   GLdouble m_base ;
+00018   GLdouble m_top ;
+00019   GLdouble m_height ;
+00020   GLint    m_slices ;
+00021   GLint    m_stacks ;
+00022               
+00023 
+00024 <span class="keyword">public</span>:
+<a name="l00030"></a><a class="code" href="classSceneGraph_1_1Cylinder.html#SceneGraph_1_1Cylindera0">00030</a>   <a class="code" href="classSceneGraph_1_1Cylinder.html#SceneGraph_1_1Cylindera0">Cylinder</a>(GLdouble base, GLdouble top, GLdouble height)
+00031   {
+00032     m_base = base ;
+00033     m_top = top ;
+00034     m_height = height ;
+00035     m_slices = 10 ;
+00036     m_stacks = 1 ;
+00037   }
+00038 
+<a name="l00040"></a><a class="code" href="classSceneGraph_1_1Cylinder.html#SceneGraph_1_1Cylindera1">00040</a>   <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSceneGraph_1_1Cylinder.html#SceneGraph_1_1Cylindera1">draw</a>()
+00041   {
+00042     glPushMatrix() ;
+00043     GLUquadric * quadric = gluNewQuadric() ;
+00044     gluQuadricDrawStyle(quadric, GLU_FILL) ;
+00045     glColor3f(1.0, 1.0, 0.0) ;
+00046     glRotatef(-90.0, 1.0, 0.0, 0.0) ;
+00047     gluCylinder(quadric, m_base, m_top, m_height, m_slices, m_stacks) ;
+00048     gluDeleteQuadric(quadric) ;
+00049 
+00050     glPushMatrix() ;
+00051     quadric = gluNewQuadric() ;
+00052     glRotatef(180.0, 0.0, 1.0, 0.0) ;
+00053     gluDisk(quadric, 0.0, m_base, m_slices, 1) ;
+00054     gluDeleteQuadric(quadric) ;
+00055     glPopMatrix() ;
+00056 
+00057     glTranslatef(0.0, 0.0, m_height) ;
+00058 
+00059     quadric = gluNewQuadric() ;
+00060     gluDisk(quadric, 0.0, m_top, m_slices, 1) ;
+00061     gluDeleteQuadric(quadric) ;
+00062            
+00063     glPopMatrix() ;
+00064 
+00065 <span class="comment">/*            m_top = 0.01f; */</span>
+00066 <span class="comment">/*            glNewList(0,GL_COMPILE);</span>
+00067 <span class="comment"> */</span>
+00068 <span class="comment">/*                   glBegin(GL_LINE_STRIP);</span>
+00069 <span class="comment"> */</span>
+00070 <span class="comment">/*                          glColor3f(1.0f, 1.0f, 0.0f);       // YELLOW</span>
+00071 <span class="comment"> */</span>
+00072 <span class="comment">/*                          glVertex3f( m_top, 0, m_top );</span>
+00073 <span class="comment"> */</span>
+00074 <span class="comment">/*                          glVertex3f(-m_top, 0, m_top );</span>
+00075 <span class="comment"> */</span>
+00076 <span class="comment">/*                          glVertex3f(-m_top, m_height, m_top );</span>
+00077 <span class="comment"> */</span>
+00078 <span class="comment">/*                          glVertex3f( m_top, m_height, m_top );</span>
+00079 <span class="comment"> */</span>
+00080 <span class="comment">/*                          glVertex3f( m_top, 0, m_top );</span>
+00081 <span class="comment"> */</span>
+00082 <span class="comment">/*                          glVertex3f( m_top, 0,-m_top );</span>
+00083 <span class="comment"> */</span>
+00084 <span class="comment">/*                          glVertex3f(-m_top, 0,-m_top );</span>
+00085 <span class="comment"> */</span>
+00086 <span class="comment">/*                          glVertex3f(-m_top, m_height,-m_top );</span>
+00087 <span class="comment"> */</span>
+00088 <span class="comment">/*                          glVertex3f( m_top, m_height,-m_top );</span>
+00089 <span class="comment"> */</span>
+00090 <span class="comment">/*                          glVertex3f( m_top, 0,-m_top );</span>
+00091 <span class="comment"> */</span>
+00092 <span class="comment">/*                          //glVertex3f( m_top,  m_top,0 );</span>
+00093 <span class="comment"> */</span>
+00094 <span class="comment">/*                          //glVertex3f(-m_top,  m_top,0 );</span>
+00095 <span class="comment"> */</span>
+00096 <span class="comment">/*                          //glVertex3f(-m_top,  m_top,m_height );</span>
+00097 <span class="comment"> */</span>
+00098 <span class="comment">/*                          //glVertex3f( m_top, m_top, m_height);</span>
+00099 <span class="comment"> */</span>
+00100 <span class="comment">/*                          //glVertex3f( m_top, m_top,0 );</span>
+00101 <span class="comment"> */</span>
+00102 <span class="comment">/*                          //glVertex3f( m_top, -m_top,0 );</span>
+00103 <span class="comment"> */</span>
+00104 <span class="comment">/*                          //glVertex3f(-m_top, -m_top,0 );</span>
+00105 <span class="comment"> */</span>
+00106 <span class="comment">/*                          //glVertex3f(-m_top, -m_top, m_height);</span>
+00107 <span class="comment"> */</span>
+00108 <span class="comment">/*                          //glVertex3f( m_top, -m_top ,m_height);</span>
+00109 <span class="comment"> */</span>
+00110 <span class="comment">/*                          //glVertex3f( m_top, -m_top,0 );</span>
+00111 <span class="comment"> */</span>
+00112 <span class="comment">/*                   glEnd();</span>
+00113 <span class="comment"> */</span>
+00114 <span class="comment">/*            glEndList();</span>
+00115 <span class="comment"> */</span>
+00116   }
+00117 
+00118 } ;
+00119 
+00120 }
+00121 
+00122 <span class="preprocessor">#endif</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Généré le Mon Jan 10 16:31:55 2005 pour TP de cinématique inverse par 
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border=0 > 
+</a>1.3.4 </small></address>
+</body>
+</html>
